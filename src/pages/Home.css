@@ -1,33 +1,57 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  background: linear-gradient(to bottom, #e6eef7, #c5d9f0);
   min-height: 100vh;
-}
-
-.App {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Scanner Container */
 .scanner-container {
   background: #ffffff;
   padding: 2rem;
-  margin: 2rem auto;
-  max-width: 600px;
+  margin: 3rem auto;
+  max-width: 640px;
   border-radius: 14px;
   text-align: center;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  border: 2px solid #d0e3f0;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d0e3f0;
 }
 
+/* Heading */
 h2 {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   color: #0b2c59;
 }
 
+/* QR Scanner Styling */
+#qr-reader {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 4 / 3;
+  border: 5px solid #2261a9;
+  border-radius: 12px;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#qr-reader > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#qr-reader video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Button Group */
 .btn-group {
   margin: 1.5rem 0;
   display: flex;
@@ -35,6 +59,7 @@ h2 {
   gap: 2rem;
 }
 
+/* Buttons */
 button {
   background-color: #2261a9;
   color: white;
@@ -52,6 +77,7 @@ button:hover {
   transform: translateY(-2px);
 }
 
+/* Total Count Display */
 p {
   font-weight: bold;
   color: #2c3e50;
